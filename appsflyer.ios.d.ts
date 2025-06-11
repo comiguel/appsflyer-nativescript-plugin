@@ -1,8 +1,12 @@
-import { InitSDKOptions, LogEventOptions } from './index';
+import { InitSDKOptions, LogEventOptions } from "./index";
+declare const startSdk: () => void;
 declare const initSdk: (args: InitSDKOptions) => Promise<unknown>;
 declare const logEvent: (args: LogEventOptions) => Promise<unknown>;
+declare const getAppsFlyerUID: () => string;
+declare const enableTCFDataCollection: (shouldCollect: bool) => Promise<unknown>;
 declare const stop: (isStopped: bool) => Promise<unknown>;
 declare const setCustomerUserId: (userId: string) => Promise<unknown>;
 declare const setAppInviteOneLink: (link: string) => Promise<unknown>;
+declare const setConsentData: (consent: any) => Promise<unknown>;
 declare const generateInviteUrl: (args: AppsFlyerLinkGeneratorArgs) => Promise<unknown>;
-export { initSdk, logEvent, stop, setCustomerUserId, setAppInviteOneLink, generateInviteUrl, };
+export { initSdk, startSdk, logEvent, stop, setCustomerUserId, setAppInviteOneLink, generateInviteUrl, getAppsFlyerUID, enableTCFDataCollection, setConsentData, };

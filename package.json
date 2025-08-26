@@ -1,6 +1,6 @@
 {
   "name": "@global66/nativescript-plugin-appsflyer",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Appsflyer SDK for NativeScript applications",
   "main": "appsflyer",
   "typings": "index.d.ts",
